@@ -13,6 +13,16 @@ The primary model is a "socially-primed" LSTM that uses vector embeddings of use
 In particular, embeddings of users and communities are learned using a "node2vec"-style approach, and we use these embeddings (along with text information from the crosslinking post) to predict whether or not the post will lead to a mobilization.
 See the [paper](https://TODO) and [project website](https://snap.stanford.edu/conflict) for more details.
 
+If you make use of the code or data associated with this project, please cite the following paper:
+  ```
+  @inproceedings{kumar2018conflict,
+	     author = {Kumar, Srijan and Hamilton, William L. and Jurafsky, Dan and Leskovec, Jure},
+	     title = {Community Interaction and Conflict on the Web},
+	     booktitle = {The Web Conference (WWW)},
+	     year = {2018}
+	   }
+  ```
+
 ### Requirements
 
 The code requires reasonably up-to-date pytorch and sklearn libraries. See requirements.txt for details (or just `pip install requirements.txt`).
