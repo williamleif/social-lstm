@@ -5,13 +5,13 @@
 
 ### Overview
 
-This package contains code to replicate the prediction results in the paper [Community Interaction and Conflict on the Web](https://TODO) published in the The Web Conference (i.e., WWW) 2018.
+This package contains code to replicate the prediction results in the paper [Community Interaction and Conflict on the Web](https://stanford.edu/~wleif/files/conflict-paper-www.pdf) published in the The Web Conference (i.e., WWW) 2018.
 The task is trying to predict inter-community mobilization and conflict on Reddit.com.
 In particular, we examine cases where one community (the "source") makes a post that hyperlinks to another community (the "target"), and the goal is predict whether or not this "cross-linking" post will lead to a significant number of source community members "mobilizing" to participate in the target community. 
 
 The primary model is a "socially-primed" LSTM that uses vector embeddings of users and communities to help make this prediction.
 In particular, embeddings of users and communities are learned using a "node2vec"-style approach, and we use these embeddings (along with text information from the crosslinking post) to predict whether or not the post will lead to a mobilization.
-See the [paper](https://TODO) and [project website](https://snap.stanford.edu/conflict) for more details.
+See the [paper](https://stanford.edu/~wleif/files/conflict-paper-www.pdf) and [project website](https://snap.stanford.edu/conflict) for more details.
 
 If you make use of the code or data associated with this project, please cite the following paper:
   ```
