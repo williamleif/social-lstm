@@ -31,7 +31,7 @@ The code requires reasonably up-to-date pytorch and sklearn libraries. See requi
 
 The `social_lstm_model.py` file contains the main model code.
 However, before using this code you will need to
-  1) Download the necessary data [here](https://TODO)
+  1) Download the necessary data [here](http://snap.stanford.edu/conflict/conflict_data.zip)
   2) Update the "DATA_DIR" value in `constants.py` to point to this unzipped data file.
 
 The command-line arguments for the social LSTM model can be explored with the `help` option.
