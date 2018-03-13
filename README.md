@@ -26,6 +26,7 @@ If you make use of the code or data associated with this project, please cite th
 ### Requirements
 
 The code requires reasonably up-to-date pytorch and sklearn libraries. See requirements.txt for details (or just `pip install requirements.txt`).
+Note that you might want to install pytorch from their [website](http://pytorch.org/) to get the latest and greatest version. 
 
 ### Using the code
 
