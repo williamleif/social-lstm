@@ -6,11 +6,11 @@
 ### Overview
 
 This package contains code to replicate the prediction results in the paper [Community Interaction and Conflict on the Web](https://stanford.edu/~wleif/files/conflict-paper-www.pdf) published in the The Web Conference (i.e., WWW) 2018.
-The task is trying to predict inter-community mobilization and conflict on Reddit.com.
+The task is trying to predict intercommunity mobilization and conflict on Reddit.com.
 In particular, we examine cases where one community (the "source") makes a post that hyperlinks to another community (the "target"), and the goal is predict whether or not this "cross-linking" post will lead to a significant number of source community members "mobilizing" to participate in the target community. 
 
 The primary model is a "socially-primed" LSTM that uses vector embeddings of users and communities to help make this prediction.
-In particular, embeddings of users and communities are learned using a "node2vec"-style approach, and we use these embeddings (along with text information from the crosslinking post) to predict whether or not the post will lead to a mobilization.
+In particular, embeddings of users and communities are learned using a "node2vec"-style approach, and we use these embeddings (along with text information from the cross-linking post) to predict whether or not the post will lead to a mobilization.
 See the [paper](https://stanford.edu/~wleif/files/conflict-paper-www.pdf) and [project website](https://snap.stanford.edu/conflict) for more details.
 
 If you make use of the code or data associated with this project, please cite the following paper:
@@ -48,7 +48,7 @@ The `nonneural_baselines.ipynb` notebook can be used to replicate the exact base
 Note that in the reported results for the LSTM models in the paper, we ran a hyperparameter sweep over learning rates in [0.001, 0.01, 0.1, 0.5], model dimensions [64, 128, 256], dropout parameters [0, 0.2, 0.4], and we considered 2-layer and single-layer LSTMS.
 All LSTM models used a batch size of 512.
 The results reported in the paper are the test set scores of the best models on the validation sets from this sweep.
-In general we found the LSTM results to be reasonably stable across random restarts with a standard deviation around 0.5 AUC. 
+In general we found the LSTM results to be reasonably stable across random restarts with a standard deviation of the AUC to around 0.5 (assuming a range of [0,100], as in the paper). 
 Finally note that some model variants (e.g., appending the social embeddings) are in the code but not discussed in the paper, as we found these to underperform the presented variant. 
 
 For the Random Forest models we found that increasing the number of trees led to stronger performance and so increased the number of trees to 500 (from the default value of 10). 
