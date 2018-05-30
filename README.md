@@ -1,7 +1,7 @@
 ## Social LSTMs to predict intercommunity-conflict
 #### Authors: [William L. Hamilton](https://stanford.edu/~wleif) (wleif@stanford.edu), [Srijan Kumar](https://cs.stanford.edu/) (srijan@cs.stanford.edu)
 #### [Project Website](https://snap.stanford.edu/conflict/)
-
+#### [Data (including user/community embeddings)](http://snap.stanford.edu/conflict/conflict_data.zip)
 
 ### Overview
 
